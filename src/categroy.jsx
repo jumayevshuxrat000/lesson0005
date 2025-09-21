@@ -24,11 +24,7 @@ export default function Categories() {
       {categories.map((cat, i) => (
         <button
           key={i}
-          className={`px-4 py-1 rounded-lg whitespace-nowrap border text-sm ${
-            i === 0
-              ? "bg-white text-black"
-              : "bg-[#303030] text-white hover:bg-[#4a4a4a]"
-          }`}
+          className="px-4 py-2 bg-[#303030] rounded-full hover:bg-[#383838] whitespace-nowrap"
         >
           {cat}
         </button>
