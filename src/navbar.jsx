@@ -67,8 +67,8 @@ export default function Sidebar() {
               className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#383838] cursor-pointer"
             >
               <img
-                src={`https://i.pravatar.cc/30?img=${i + 1}`}
-                alt={name}
+                src={`https://i.pravatar.cc/30?img`}
+                alt=""
                 className="w-6 h-6 rounded-full"
               />
               <span className="text-sm">{name}</span>

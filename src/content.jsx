@@ -12,7 +12,7 @@ export default function Videos() {
         setVideos(res.data);
       })
       .catch((err) => {
-        console.error("Xatolik:", err);
+        console.error("Xatolik", err);
       });
   }, []);
 
