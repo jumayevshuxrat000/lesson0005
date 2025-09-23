@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaHome,
   FaCompass,
@@ -15,17 +16,19 @@ import {
 
 export default function Sidebar() {
   return (
-    <aside className="w-60 h-screen bg-[#202020] text-white p-3 overflow-y-auto">
-      <nav className="space-y-1 border-b border-gray-700 pb-3">
-        <a className="flex items-center gap-4 px-3 py-2 rounded-lg hover:bg-[#383838] cursor-pointer">
-          <FaHome /> <span>Home</span>
-        </a>
-        <a className="flex items-center gap-4 px-3 py-2 rounded-lg hover:bg-[#383838] cursor-pointer">
-          <FaCompass /> <span>Explore</span>
-        </a>
-        <a className="flex items-center gap-4 px-3 py-2 rounded-lg hover:bg-[#383838] cursor-pointer">
-          <FaRegFolder /> <span>Subscriptions</span>
-        </a>
+<aside className="w-60 h-screen bg-[#202020] text-white p-3 overflow-y-auto">
+     <nav className="space-y-1 border-b border-gray-700 pb-3">
+      <Link to="/" className="flex items-center gap-4 px-3 py-2 rounded-lg hover:bg-[#383838] cursor-pointer">
+        <FaHome /> <span>Home</span>
+      </Link>
+  
+      <Link to="/explore" className="flex items-center gap-4 px-3 py-2 rounded-lg hover:bg-[#383838] cursor-pointer">
+        <FaCompass /> <span>Explore</span>
+      </Link>
+  
+      <Link to="/subscriptions" className="flex items-center gap-4 px-3 py-2 rounded-lg hover:bg-[#383838] cursor-pointer">
+        <FaRegFolder /> <span>Subscriptions</span>
+      </Link>
       </nav>
 
       <nav className="space-y-1 border-b border-gray-700 py-3">
